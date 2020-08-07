@@ -1,6 +1,6 @@
 {
-  "name": "postcss-dptorem",
-  "description": "A CSS post-processor that converts dp(dots per inch) to rem. the source form postcss-pxtorem",
+  "name": "postcss-pttorem",
+  "description": "A CSS post-processor that converts pt(not real pt) to rem. the source form postcss-pxtorem",
   "version": "5.2.0",
   "author": "cuth",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "css",
     "rem",
     "pixel",
-    "dp",
+    "pt",
     "postcss",
     "postcss-plugin"
   ],

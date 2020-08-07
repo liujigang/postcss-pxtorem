@@ -23,7 +23,7 @@ const legacyOptions = {
   propWhiteList: "propList"
 };
 
-module.exports = postcss.plugin("postcss-dptorem", options => {
+module.exports = postcss.plugin("postcss-pttorem", options => {
   convertLegacyOptions(options);
   const opts = Object.assign({}, defaults, options);
   const satisfyPropList = createPropListMatcher(opts.propList);
@@ -52,7 +52,7 @@ module.exports = postcss.plugin("postcss-dptorem", options => {
 
     css.walkDecls((decl, i) => {
       if (
-        decl.value.toLowerCase().indexOf("dp") === -1 ||
+        decl.value.toLowerCase().indexOf("pt") === -1 ||
         !satisfyPropList(decl.prop) ||
         blacklistedSelector(opts.selectorBlackList, decl.parent.selector)
       )
@@ -72,7 +72,7 @@ module.exports = postcss.plugin("postcss-dptorem", options => {
 
     if (opts.mediaQuery) {
       css.walkAtRules("media", rule => {
-        if (rule.params.toLowerCase().indexOf("dp") === -1) return;
+        if (rule.params.toLowerCase().indexOf("pt") === -1) return;
         rule.params = rule.params.replace(pxRegex, pxReplace);
       });
     }
