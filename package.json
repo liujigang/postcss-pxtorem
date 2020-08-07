@@ -1,14 +1,14 @@
 {
-  "name": "postcss-pxtorem",
-  "description": "A CSS post-processor that converts px to rem.",
+  "name": "postcss-dptorem",
+  "description": "A CSS post-processor that converts dp(dots per inch) to rem. the source form postcss-pxtorem",
   "version": "5.1.1",
   "author": "cuth",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:cuth/postcss-pxtorem.git"
+    "url": "git@github.com:liujigang/postcss-pxtorem.git"
   },
-  "bugs": "https://github.com/cuth/postcss-pxtorem/issues",
+  "bugs": "https://github.com/liujigang/postcss-pxtorem/issues",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -36,11 +36,11 @@
     "css",
     "rem",
     "pixel",
-    "px",
+    "dp",
     "postcss",
     "postcss-plugin"
   ],
   "dependencies": {
-    "postcss": "^7.0.27"
+    "postcss": "^7.0.32"
   }
 }
